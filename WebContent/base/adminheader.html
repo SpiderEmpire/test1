@@ -1,0 +1,79 @@
+<!-- Start Header Section -->
+<header class="main_menu_sec navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12">
+				<div class="lft_hd">
+					<a href="index.html"><img
+						src="img/can-stock-photo_csp15804806.jpg" alt="" /></a>
+				</div>
+				<div
+					style="width: 170%; font-size: 34px; color: white; margin-top: 12%;">
+					<a style="font-size: 34px; color: white; margin-top: 20%">Secure
+						Smart Grid</a>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-12">
+				<div class="rgt_hd">
+					<div class="main_menu">
+						<nav id="nav_menu">
+							<button aria-controls="navbar" aria-expanded="false"
+								data-target="#navbar" data-toggle="collapse"
+								class="navbar-toggle collapsed" type="button">
+								<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+									class="icon-bar"></span>
+							</button>
+							<div id="navbar">
+								<ul>
+									<li><a class="page-scroll" href="admin.jsp">Home</a></li>
+								
+									<li><a class="page-scroll" href="#">Users</a>
+										<ul>
+											<li style="margin-left: 0px;"><a class=""
+												href="ManageUsers.jsp?filter=All">Users List </a></li>
+											<li style="margin-left: 0px;"><a class=""
+												href="ShowComplaints.jsp">User Complaints</a></li>
+
+										</ul></li>
+
+									
+
+									<li><a class="page-scroll" href="#">Regions</a>
+										<ul>
+											<li style="margin-left: 0px;"><a class=""
+												href="AddRegion.jsp">Add New Region </a></li>
+											<li style="margin-left: 0px;"><a class=""
+												href="ManageRegion.jsp">Region List</a></li>
+
+										</ul></li>
+									<li><a class="page-scroll" href="#">Files</a>
+										<ul>
+											<li style="margin-left: 0px;"><a class=""
+												href="FileList.jsp">File List </a></li>
+											<li style="margin-left: 0px;"><a class=""
+												href="UploadAdminFile.jsp">Save Files</a></li>
+
+										</ul></li>
+										
+										<li><a class="page-scroll" href="PublicNotice.jsp">Public Notice
+									</a></li>
+									<li><a class="page-scroll" href="#pr_sec"> <% session
+											= request.getSession(false); if (session != null) {
+											out.println(session.getAttribute("name")); } else {
+											out.println("Welcome"); } %> </a>
+										<ul>
+											<li style="margin-left: 0px;"><a class="" href="Logout">Logout
+											</a></li>
+
+										</ul></li>
+
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- End Header Section -->

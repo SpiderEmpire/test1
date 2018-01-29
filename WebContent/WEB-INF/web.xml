@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>SecureSmartGrid</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>SecureSmartGrid</servlet-name>
+    <jsp-file>/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecureSmartGrid</servlet-name>
+    <url-pattern>/www.SecureSmartGrid.com</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>host</param-name>
+    <param-value>smtp.gmail.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>port</param-name>
+    <param-value>587</param-value>
+  </context-param>
+  <context-param>
+    <param-name>user</param-name>
+    <param-value>otpvarification@gmail.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>pass</param-name>
+    <param-value>smartgrid123456</param-value>
+  </context-param>
+  <context-param>
+    <param-name>logpath</param-name>
+    <param-value>E:\\BE\\SmartGrid\\</param-value>
+  </context-param>
+  <context-param>
+    <param-name>path</param-name>
+    <param-value>C:\\SmartGrid\\</param-value>
+  </context-param>
+</web-app>
